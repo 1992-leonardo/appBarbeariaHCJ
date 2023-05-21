@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Barbearia App</title>
+</head>
+<body>
+  <header>
+    <h1>Barbearia App</h1>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Nossos serviços</h2>
+      <ul>
+        <li>Corte de cabelo</li>
+        <li>Barba</li>
+        <li>Pacote completo (cabelo e barba)</li>
+      </ul>
+    </section>
+
+    <section id="booking">
+      <h2>Agendamento</h2>
+      <form id="bookingForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required>
+
+        <label for="service">Serviço:</label>
+        <select id="service" required>
+          <option value="">Selecione um serviço</option>
+          <option value="Corte de cabelo">Corte de cabelo</option>
+          <option value="Barba">Barba</option>
+          <option value="Pacote completo">Pacote completo</option>
+        </select>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Horário:</label>
+        <input type="time" id="time" required>
+
+        <input type="submit" value="Agendar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Barber Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
